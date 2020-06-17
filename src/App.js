@@ -6,7 +6,8 @@ import vancouver from './img/vancouver2.png';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
-    height: '93vh',
+    //height: '93vh',
+    height: '100%',
     background: '#FFF'
   },
   content: {
@@ -47,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     
   },
   img :{
-    width: '80%',
+    width: '70%',
     float: 'right'
   },
   logo: {
