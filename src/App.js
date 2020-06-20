@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
 import { makeStyles } from '@material-ui/core/styles';
-import vancouver from './img/vancouver2.png';
+import vancouver from './img/vancouver.png';
+import Link from './Link';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
-    height: '90vh',
+    height: 'calc(100vh - 64px)',
     background: '#FFF'
   },
   content: {
@@ -74,12 +75,20 @@ function App() {
           <div className={classes.logo}>
             <h1 className={classes.logoText}>AJA</h1>
           </div>
+          {/*
           <ul className={classes.ul}>
             <li className={classes.li}>My Work</li>
             <li className={classes.li}>Skills</li>
             <li className={classes.li}>About</li>
             <li className={classes.li}>Contact</li>
           </ul>
+          */}
+        <div className={classes.ul}>
+          <Link label={'Projects'}/>
+          <Link label={'My Work'}/>
+          <Link label={'About'}/>
+          <Link label={'Contact'}/>
+        </div>
         </div>
         <div className={classes.intro}>
           <h1>Hi i'm AJ.</h1>
