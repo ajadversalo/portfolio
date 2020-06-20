@@ -6,8 +6,7 @@ import vancouver from './img/vancouver2.png';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
-    //height: '93vh',
-    height: '100%',
+    height: '90vh',
     background: '#FFF'
   },
   content: {
@@ -34,7 +33,11 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'space-around'
   },
   li: {
-    fontWeight: '600'
+    fontWeight: '600',
+    '&:hover':{
+      textDecoration: 'underline',
+      textDecorationStyle: 'solid',
+    }
   },
   intro: {
     width: '400px',
@@ -42,17 +45,16 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: '8rem'
   },
   background :{
-    //position: 'absolute',
-    //bottom: 0,
     width: '100%',
-    
+    position: 'absolute',
+    bottom: 0
   },
   img :{
     width: '70%',
     float: 'right'
   },
   logo: {
-    backgroundColor: '#000'    
+    backgroundColor: '#4f6d7a'    
   },
   logoText: {
     color: '#FFF',
